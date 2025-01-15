@@ -4,11 +4,17 @@
     co musi mit nastaveno rodic,
     aby v ramci nej fungovalo absolutni pozicovani?
     */
+    /* rodic musi byt cokoliv jineho nez static a proto pouzijeme relative - prvek zustane na svem 
+        puvodnim miste ale uz neni static a muzeme podle toho nastavovat dalsi prvky */
+    position: relative;
 
 }
 
 .potomek {
     /* zde dopis absolutni pozicovani potomka */
+    position: absolute;
+    top: -60px;
+    left: 60px;
 
 }
 

@@ -1,7 +1,14 @@
 /* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
 /* toto je černá magie, na kterou nešahej! */
-html { box-sizing: border-box; }
-*, ::after, ::before { box-sizing: inherit; }
+html {
+	box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+	box-sizing: inherit;
+}
 
 body {
 	font-family: sans-serif;
@@ -12,4 +19,118 @@ body {
 
 
 /* tady bude tvůj kód */
+header {
+	position: sticky;
+	top: 0px;
+	z-index: 1;
+}
 
+nav a {
+	display: inline-block;
+	padding: 30px;
+	color: white;
+	text-decoration: none;
+}
+
+nav {
+	padding: 0px;
+	background-color: rgb(234, 90, 41);
+	text-align: center;
+}
+
+nav a:hover,
+nav a:focus {
+	background-color: #b42c13;
+}
+
+footer {
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 10px;
+}
+
+main {
+	margin: 50px 80px auto;
+}
+
+.ctverec {
+	background-color: rgb(210, 219, 228);
+	height: 400px;
+	border: 1px dashed lightslategray;
+	position: relative
+}
+
+.obdelnik {
+	width: 250px;
+	padding: 20px;
+	
+}
+
+.levy_roh {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: green;
+	border: 1px dashed rgb(177, 175, 175);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.pravy_okraj {
+	position: absolute;
+	top: 50%;
+	right: 0px;
+	background-color: rgb(255, 200, 0);
+	border: 1px dashed rgb(177, 175, 175);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.pravy_dolni {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	background-color: rgb(116, 116, 239);
+	border: 1px dashed rgb(177, 175, 175);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.dolni_okraj {
+	position: absolute;
+	bottom: 0px;
+	right: 50%;
+	background-color: rgb(252, 115, 115);
+	border: 1px dashed rgb(177, 175, 175);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.neprectene {
+	border: 1px solid silver;
+	padding: 10px;
+	position: relative;
+	max-width: 250px;
+	margin: 30px auto;
+}
+
+.neprectene_cislo {
+	display: block;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	background-color: rgb(234, 102, 102);
+	border-radius: 50%;
+	color: white;
+	position: absolute;
+	top: -15px;
+	right: -15px;
+}

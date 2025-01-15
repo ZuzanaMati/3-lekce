@@ -1,10 +1,12 @@
-
 .sticky {
     /*
     napozicuj box tak, aby se při skrolování
     zastavil o horní okraj stránky
     */
+    /* kombinace fixed a relative, v zakladu se obdelnicek nikam neposune (relative), ale pri scrolovani
+        se obdelnicek prichyti na vrchni okraj stranky a dal jede s ni */
     position: sticky;
+    top: 0px;
 
 }
 
@@ -21,4 +23,3 @@
     border: 1px dashed black;
     background-color: #ffffd0;
 }
-

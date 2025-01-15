@@ -1,6 +1,18 @@
-
 .absolute {
 
     /* zde dopiš absolutní pozicovaní prvku na stránce */
+    /* treti obdelnik je schovany pod tim prostrednim obdelnickem, absolute vzjme kompletne element z 
+        weboveho flow a zanikne i ten puvodni prostor, ktery ten element zabiral, absolute vyjmulo prvek
+        a to prazdne misto vyplnil ten prvek nasledujici, pri nastavovani top bottom.. se ctverecek
+        posunul nekam uplne jinam ted 30px vuci oknu prohlizece jiz ne vuci puvodnimu mistu kde byl 
+        */
 
+    position: absolute;
+    top: 30px;
+    left: 150px;
+
+}
+
+body {
+    margin: 0;
 }

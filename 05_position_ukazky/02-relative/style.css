@@ -1,15 +1,15 @@
-
 .relative {
     /* zde dopis relativni pozicovani prostredniho obdelniku */
-    
+    /* timto s eoteviraji moznosti jak s tim dale pracovat, top left bottom right.. 
+        umozni napozicovat prvek realtivne vuci jeho puvodni pozici, tam kde byl prvek puvodne
+        tak tam zustane prazdny prostor, ostatni elementy na ktere to position relative nepisu
+        tak zustavaji stejne, takze je mozny i prekryv */
+    position: relative;
+    top: 200px;
+    left: 300px;
 }
 
-
-
-
-
 /* --------------------- */
-
 
 
 /*
